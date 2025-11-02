@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vocabulary Self Learning</title>
+
+    <!-- CSS 불러오기 -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="quiz">
+    <button id="start">테스트 시작</button>
+    <p id="word-progress-text" style="display:none;">진행 상황: 0 / 0</p>
+    <div id="word-progress-bar" style="display:none;">
+        <div id="word-progress"></div>
+    </div>
+    <h2 id="word" style="display:none;"></h2>
+    <button id="speak-word" style="display:none;">단어 발음 듣기</button>
+    <p id="example" style="display:none;"></p>
+    <p id="explanation" style="display:none;"></p>
+    <div id="options" style="display:none;">
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option">정확히 모르겠음.</button>
+    </div>
+    <div id="feedback"></div>
+    <button id="next-word" style="display:none;">다음 문제</button>
+    <div id="result" style="display:none;"></div>
+    <div id="result-buttons" style="display:none;">
+        <button id="restart">다시하기</button>
+        <button id="review-wrong">틀린 문제만 보기</button>
+    </div>
+    </div>
+
+
+    <!-- JS 불러오기 (defer로 로딩) -->
+    <script src="js/app.js" defer></script>
+</body>
+</html>
